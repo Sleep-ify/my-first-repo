@@ -1,5 +1,12 @@
+from bank import BankAccount
 
-# Simple Bank Account Class
+def main():
+    account = BankAccount("Alice", 100, 0.05)
+    account.deposit(200)
+    account.withdraw(50)
+    account.add_interest()
+    account.show_transactions()
+    print(account)
 
-This is a basic Python project that demonstrates object-oriented programming (OOP) by implementing a `BankAccount` class. The class allows for creating accounts, depositing money, withdrawing money, and checking the account balance.
-
+if __name__ == "__main__":
+    main()
